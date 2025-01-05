@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFacebook, FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import image from "../../../assets/image.png";
 
 const HeroSection = () => {
   const handleDownload = async () => {
@@ -90,7 +91,7 @@ const HeroSection = () => {
           </div>
 
           <img
-            src="https://i.ibb.co/vLm1Qzg/banner-avatar.png"
+            src={image}
             alt="Banner img"
             className="z-20 w-40 sm:w-52 lg:w-auto"
           />

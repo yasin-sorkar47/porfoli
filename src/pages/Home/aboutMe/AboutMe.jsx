@@ -1,3 +1,5 @@
+import image from "../../../assets/image.png";
+
 export default function AboutMe() {
   return (
     <section id="about" className="py-16 bg-gray-50 text-center lg:px-20">
@@ -9,11 +11,7 @@ export default function AboutMe() {
                 <div className="absolute h-[335px] border-2  rounded-lg  border-orange-600 w-full top-1 left-2 z-[-1]"></div>
               </div>
             </div>
-            <img
-              src="https://i.ibb.co/vLm1Qzg/banner-avatar.png"
-              alt="Banner img"
-              className="z-20"
-            />
+            <img src={image} alt="Banner img" className="z-20" />
           </div>
         </div>
         <div className="md:w-1/2 lg:text-left px-8 lg:mt-20 text-center">
