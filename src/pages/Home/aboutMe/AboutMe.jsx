@@ -1,8 +1,6 @@
-import { FaFacebook, FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
-
 export default function AboutMe() {
   return (
-    <section className="py-16 bg-gray-50 text-center lg:px-20">
+    <section id="about" className="py-16 bg-gray-50 text-center lg:px-20">
       <div className="container mx-auto flex  flex-col-reverse md:flex-row items-center">
         <div className="md:w-1/2 mt-12 md:mt-0">
           <div className="flex  justify-center relative z-30">
@@ -19,29 +17,41 @@ export default function AboutMe() {
           </div>
         </div>
         <div className="md:w-1/2 lg:text-left px-8 lg:mt-20 text-center">
-          <h3 className="text-orange-500 uppercase text-sm font-bold">
+          <h3 className="text-orange-500 uppercase text-2xl mb-5 font-bold">
             A Bit About Me
           </h3>
-          <h2 className="lg:text-4xl text-xl font-semibold my-4">
-            Passionate About Code, Driven by Creativity
-          </h2>
-          <p className="text-gray-600 mb-6">
-            Driven by a love for solving problems and creating seamless digital
-            experiences, I develop user-centered websites and applications.
-          </p>
-          <div className="flex space-x-4 justify-center lg:justify-start">
-            <a href="#" className="text-orange-500 hover:text-orange-700">
-              <FaLinkedinIn size={24} />
-            </a>
-            <a href="#" className="text-orange-500 hover:text-orange-700">
-              <FaGithub size={24} />
-            </a>
-            <a href="#" className="text-orange-500 hover:text-orange-700">
-              <FaTwitter size={24} />
-            </a>
-            <a href="#" className="text-orange-500 hover:text-orange-700">
-              <FaFacebook size={24} />
-            </a>
+          <div>
+            <p className="text-lg leading-relaxed mb-6">
+              Hello! I'm{" "}
+              <span className="font-bold text-orange-500">Yasin Sarkar</span>, a{" "}
+              <span className="font-semibold text-lime-600">
+                Frontend Developer
+              </span>{" "}
+              who loves crafting stunning, user-friendly web experiences. My
+              journey into coding began with curiosity, exploring how the
+              internet works, and has grown into a deep passion for web
+              development.
+            </p>
+            <p className="text-lg leading-relaxed mb-6">
+              I specialize in{" "}
+              <span className="font-semibold text-orange-500">React.js</span>{" "}
+              and{" "}
+              <span className="font-semibold text-orange-500">
+                Tailwind CSS
+              </span>
+              . I thrive on solving challenging problems and turning ideas into
+              reality. Building responsive, modern web applications is not just
+              my skill but my passion.
+            </p>
+            <p className="text-lg leading-relaxed">
+              When I'm not coding, you can find me{" "}
+              <span className="font-semibold text-orange-500">
+                playing football
+              </span>
+              , <span className="font-semibold text-orange-500">painting</span>,
+              or spending quality time with loved ones. These activities inspire
+              my creativity and keep me motivated.
+            </p>
           </div>
         </div>
       </div>

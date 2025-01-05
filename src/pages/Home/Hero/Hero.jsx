@@ -20,7 +20,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="bg-slate-800">
+    <div id="home" className="bg-slate-800">
       <div className="grid grid-cols-1 lg:grid-cols-2  px-6 sm:px-10 lg:px-20 pt-16 lg:pt-32 items-center container mx-auto">
         {/* Left Section */}
         <div className="text-white space-y-5 text-center lg:text-left mb-8 lg:mb-0">

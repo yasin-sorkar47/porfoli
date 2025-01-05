@@ -2,11 +2,27 @@ export default function Skills() {
   const skills = [
     { name: "JavaScript", percentage: 95 },
     { name: "React", percentage: 90 },
-    { name: "Node.js", percentage: 85 },
+    { name: "Node.js", percentage: 50 },
   ];
 
+  const handleDownload = async () => {
+    try {
+      const response = await fetch("/my-rsume.pdf");
+      const blob = await response.blob();
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = "Your-CV.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(link.href);
+    } catch (error) {
+      console.error("Error downloading the CV:", error);
+    }
+  };
+
   return (
-    <section className="py-16 bg-white px-6 sm:px-10 lg:px-20">
+    <section id="skill" className="py-16 bg-white px-6 sm:px-10 lg:px-20">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
         {/* Left Section */}
         <div>
@@ -22,7 +38,10 @@ export default function Skills() {
           <h2 className="text-3xl sm:text-4xl font-semibold my-4">
             I Am in This Field!
           </h2>
-          <button className="mt-8 px-6 py-3 bg-orange-500 text-white rounded-3xl hover:bg-orange-600 transition">
+          <button
+            onClick={handleDownload}
+            className="mt-8 px-6 py-3 bg-orange-500 text-white rounded-3xl hover:bg-orange-600 transition"
+          >
             Get My Resume
           </button>
         </div>

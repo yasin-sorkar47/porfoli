@@ -1,4 +1,3 @@
-import Footer from "../../shared/Footer/Footer";
 import AboutMe from "../aboutMe/AboutMe";
 import ContactMe from "../ContactMe/ContactMe";
 import Counting from "../counting/Counting";
@@ -15,7 +14,6 @@ export default function Home() {
       <Skills />
       <Projects />
       <ContactMe />
-      <Footer />
     </>
   );
 }
